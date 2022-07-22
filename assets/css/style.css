@@ -722,6 +722,17 @@ li.active a{
 .search-btn .btn-link i{
 	margin-left: 5px;
 }
+
+@media only screen and (max-width: 1200px){
+	li.IamAbout{
+		display: none;
+	}
+
+	.nav-social-link{
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 991px) {
 	.add-menu-left ul{
 		display: block !important;
@@ -1064,6 +1075,9 @@ li.active a{
 .header-transparent .topbar-right ul li a{
 	color:#fff;	
 }
+
+
+
 @media only screen and (max-width: 991px) {
 	.header-transparent .menu-links .nav > li > a{
 		color:#000;
@@ -1071,6 +1085,7 @@ li.active a{
 	.header-transparent .menu-links.nav-dark .nav > li > a{
 		color:#fff;
 	}
+
 }
 @media only screen and (max-width: 767px) {
 	.fullwidth .container-fluid{
@@ -1805,6 +1820,12 @@ footer .widget_services ul li:hover {
 	display:block;
 	font-weight: 400;
 }
+
+.footerRowContainer{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
 /* Subscribe Form */
 .subscribe-form input{
 	background-color:rgba(0,0,0,0.2);
@@ -1976,7 +1997,6 @@ button.back-to-top {
 	display: inline-block;
 	font-size: 13px;
 	text-transform: capitalize;
-	font-family: ;
 	margin-right: 5px;
 }
 .media-post li a{
