@@ -100,7 +100,7 @@ a.innerHTML= `${b}`;
                 headers: { 'auth-token': JSON.parse(sessionStorage.getItem('token'))},
              };
              
-            let response = await fetch("http://localhost:5000/contact/getAllMessages",MessageOptions)
+            let response = await fetch("https://universities-website-api.herokuapp.com/contact/getAllMessages",MessageOptions)
             const allMessage = await response.json(); 
             const finalMessage = allMessage.messages;
             console.log(finalMessage);

@@ -106,7 +106,7 @@ let x = document.getElementById("userBoard");
             headers: { 'auth-token': JSON.parse(sessionStorage.getItem('token'))},
          };
          
-        let response = await fetch("http://localhost:5000/register/getAllUsers",UsersOptions)
+        let response = await fetch("https://universities-website-api.herokuapp.com/register/getAllUsers",UsersOptions)
         const allUsers = await response.json(); 
         const allRegisteredUsers = allUsers.Users
         console.log(allRegisteredUsers);

@@ -21,11 +21,6 @@ async function storeMessage() {
  let message = document.getElementById("userMessage");
 
 
-//  let messageSuccess = document.getElementById("message");
-//  messageSuccess.style.display = "block";
-//  messageSuccess.innerHTML =`
-// <img src="./assets/images/Spinner.gif" alt="loading..." width="50px" height="50px">` ;
-
 setTimeout(function(){
    messageSuccess.innerHTML = 'Message sent successfully!' ;
   }, 4000);
@@ -51,7 +46,7 @@ setTimeout(function(){
        })
     };
     
-    fetch('http://localhost:5000/contact/sendMessage', UserRequestOptions)
+    fetch('https://universities-website-api.herokuapp.com/contact/sendMessage', UserRequestOptions)
      
        .then(response => response.json())
        .then(data => {console.log(data)})

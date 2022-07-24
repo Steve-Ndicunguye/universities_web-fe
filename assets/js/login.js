@@ -26,7 +26,7 @@ const login = () => {
         })
     }
     
-    fetch('http://localhost:5000/login', fetchData)
+    fetch('https://universities-website-api.herokuapp.com/login', fetchData)
 
 .then(response => response.json())
 .then(data => {

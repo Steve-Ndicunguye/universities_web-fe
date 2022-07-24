@@ -35,7 +35,7 @@ async function signup(){
             // 'Authorization': `Bearer ${user.token}`
         })
     }
-    fetch(`http://localhost:5000/register/createUser`, fetchData)
+    fetch(`https://universities-website-api.herokuapp.com/register/createUser`, fetchData)
     .then((response)=>{
       return response.json()
     }).then((datas)=>{
