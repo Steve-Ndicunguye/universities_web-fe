@@ -61,13 +61,14 @@
 					<h2 class="title-head">Sign Up <span>Now</span></h2>
 					<p>Login Your Account <a href="login.html">Click here</a></p>
 				</div>	
-				<form class="contact-bx">
+				<form class="contact-bx" id="signupForm">
+                  <div id="messageSuccess" style="text-align: center; color: green; border: 1px solid green; padding: 5px; margin-bottom: 30px;"></div>
 					<div class="row placeani">
 						<div class="col-lg-12">
 							<div class="form-group">
 								<div class="input-group">
 									<label>First Name</label>
-									<input name="dzName" type="text" required="" class="form-control">
+									<input name="dzName" type="text" required="" class="form-control" id="firstName">
 								</div>
 							</div>
 						</div>
@@ -75,7 +76,7 @@
 							<div class="form-group">
 								<div class="input-group">
 									<label>Last Name</label>
-									<input name="dzName" type="text" required="" class="form-control">
+									<input name="dzName" type="text" required="" class="form-control" id="lastName">
 								</div>
 							</div>
 						</div>
@@ -83,7 +84,7 @@
 							<div class="form-group">
 								<div class="input-group">
 									<label>Email Address</label>
-									<input name="dzName" type="email" required="" class="form-control">
+									<input name="dzName" type="email" required="" class="form-control" id="email">
 								</div>
 							</div>
 						</div>
@@ -91,7 +92,7 @@
 							<div class="form-group">
 								<div class="input-group"> 
 									<label>Password</label>
-									<input name="dzEmail" type="password" class="form-control" required="">
+									<input name="dzEmail" type="password" class="form-control" required="" id="password">
 								</div>
 							</div>
 						</div>
@@ -99,7 +100,7 @@
 							<div class="form-group">
 								<div class="input-group"> 
 									<label>Repeat Password</label>
-									<input name="dzEmail" type="password" class="form-control" required="">
+									<input name="dzEmail" type="password" class="form-control" required="" id="repeatPassword">
 								</div>
 							</div>
 						</div>
@@ -130,6 +131,7 @@
 <script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
 <script src="assets/js/functions.js"></script>
 <script src="assets/js/contact.js"></script>
+<script src="assets/js/signup.js"></script>
 <script src='assets/vendors/switcher/switcher.js'></script>
 </body>
 

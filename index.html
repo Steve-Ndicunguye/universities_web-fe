@@ -238,7 +238,7 @@
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
 								style="z-index: 7; white-space: nowrap; color:#fff; font-family:rubik; font-size:25px; font-weight:400;">
-									Welcome To 
+									Welcome to 
 							</div>
 							
 							<!-- LAYER NR. 3 -->
@@ -809,16 +809,16 @@
 						<div class="item">
 							<div class="testimonial-bx">
 								<div class="testimonial-thumb">
-									<img src="assets/images/testimonials/Ruzindana.jpg" alt="">
+									<img src="assets/images/testimonials/yvan.jpeg" alt="">
 								</div>
 								<div class="testimonial-info">
-									<h5 class="name">Ernest Ruzindana</h5>
-									<p>- GIS Developer</p>
+									<h5 class="name">Yvan Cyomoro</h5>
+									<p>- Student</p>
 								</div>
 								<div class="testimonial-content">
-									<p>I am happy to have discovered the Rwanda Universities Information website.
+									<p>I am happy to have developed the Rwanda Universities Information website.
 										It is amazing how information about multiple universities in Rwanda are
-										all found here. Keep the good work guys!
+										all found here for helping students.
 									</p>
 								</div>
 							</div>
@@ -842,7 +842,7 @@
 										<ul>
 											<li><i class="ti-location-pin"></i>Kigali Downtown, CHIC Building, Second Floor, Room 58 </li>
 											<li><i class="ti-mobile"></i>+250788619790 (24/7 Support Line)</li>
-											<li><i class="ti-email"></i>rui.rwanda@gmail.com</li>
+											<li><i class="ti-email"></i>yvancyomoro@gmail.com</li>
 										</ul>
 									</div>
 									<h5 class="m-t0 m-b20">Follow Us</h5>
@@ -854,9 +854,9 @@
 									</ul>
 								</div>
 							</div>
-							<div class="col-lg-7 col-md-7">
-								<form class="contact-bx ajax-form" action="http://educhamp.themetrades.com/demo/assets/script/contact.php">
-								<div class="ajax-message"></div>
+							<div class="col-lg-7 col-md-7" >
+								<form class="contact-bx ajax-form" id="form">
+								<div id="message" style="text-align: center; color: green; border: 1px solid green; padding: 5px; margin-bottom: 30px;"></div>
 									<div class="heading-bx left">
 										<h2 class="title-head">Contact <span>Us</span></h2>
 										<p>For any idea or suggestion don't hesitate to reach out to us, 
@@ -867,7 +867,7 @@
 											<div class="form-group">
 												<div class="input-group">
 													<label>Your Name</label>
-													<input name="name" type="text" required class="form-control valid-character">
+													<input name="name" type="text" class="form-control valid-character" id="name">
 												</div>
 											</div>
 										</div>
@@ -875,7 +875,7 @@
 											<div class="form-group">
 												<div class="input-group"> 
 													<label>Your Email Address</label>
-													<input name="email" type="email" class="form-control" required >
+													<input name="email" type="email" class="form-control" id="email">
 												</div>
 											</div>
 										</div>
@@ -883,7 +883,7 @@
 											<div class="form-group">
 												<div class="input-group">
 													<label>Your Phone</label>
-													<input name="phone" type="text" required class="form-control int-value">
+													<input name="phone" type="text" class="form-control int-value" id="phoneNumber">
 												</div>
 											</div>
 										</div>
@@ -891,7 +891,7 @@
 											<div class="form-group">
 												<div class="input-group">
 													<label>Subject</label>
-													<input name="subject" type="text" required class="form-control">
+													<input name="subject" type="text" class="form-control" id="subject">
 												</div>
 											</div>
 										</div>
@@ -899,20 +899,20 @@
 											<div class="form-group">
 												<div class="input-group">
 													<label>Type Message</label>
-													<textarea name="message" rows="4" class="form-control" required ></textarea>
+													<textarea name="message" rows="4" class="form-control" id="userMessage"></textarea>
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-12">
+										<!-- <div class="col-lg-12">
 											<div class="form-group">
 												<div class="input-group">
 													<div class="g-recaptcha" data-sitekey="6Lf2gYwUAAAAAJLxwnZTvpJqbYFWqVyzE-8BWhVe" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
 													<input class="form-control d-none" style="display:none;" data-recaptcha="true" required data-error="Please complete the Captcha">
 												</div>
 											</div>
-										</div>
+										</div> -->
 										<div class="col-lg-12">
-											<button name="submit" type="submit" value="Submit" class="btn button-md"> Send Message</button>
+											<button name="submit" type="submit" value="Submit" class="btn button-md" > Send Message</button>
 										</div>
 									</div>
 								</form>
@@ -1018,6 +1018,7 @@
 <script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
 <script src="assets/js/functions.js"></script>
 <script src="assets/js/contact.js"></script>
+<script src="assets/js/index.js"></script>
 <!-- Revolution JavaScripts Files -->
 <script src="assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
 <script src="assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
